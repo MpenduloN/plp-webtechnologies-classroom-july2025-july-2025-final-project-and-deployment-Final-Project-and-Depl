@@ -1,0 +1,269 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f4f8fb;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.search-form input[type="search"] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* ==== NAVBAR ==== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #cce4ff;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+  background: #fff;
+  padding: 20px;
+  width: 220px;
+  border-right: 2px solid #e0e6f1;
+  position: fixed;
+  top: 80px; /* below header */
+  left: 0;
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+  color: #0052d4;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #0052d4;
+  padding-left: 5px;
+}
+
+/* ==== MAIN CONTENT ==== */
+main {
+  margin-left: 240px; /* space for sidebar */
+  padding: 40px 20px;
+  max-width: 1000px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #0052d4;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #6fb1fc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ==== CALENDAR ==== */
+.calendar-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.calendar-container h2 {
+  color: #0052d4;
+  margin-bottom: 10px;
+}
+
+/* ==== CONTACT FORM ==== */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 600px;
+}
+/* Everything except sidebar */
+.page-content {
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+  padding: 20px;
+}
+
+/* When sidebar is open */
+.page-content.shifted {
+  margin-left: 240px; /* match sidebar width */
+}
+
+/* Footer */
+footer {
+  background: #0052d4;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+.policy-link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: none;
+  color: #0052d4;
+  font-weight: bold;
+}
+
+.policy-link:hover {
+  text-decoration: underline;
+}
+#event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background: #f5f9ff;
+  border: 1px solid #d0e3ff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  background: #e8f1ff;
+}
+.calendar-iframe {
+    width: 100%;
+    min-height: 400px;
+    max-width: 1200px;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+}
+button,
+input[type="submit"] {
+  background: linear-gradient(135deg, #0052d4, #4364f7);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #0041a8, #365dd6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:active,
+input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+button,
+input[type="submit"] {
+  background: linear-gradient(135deg, #0052d4, #4364f7);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #0041a8, #365dd6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:active,
+input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+/* ==== FADE-IN ON SCROLL ==== */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

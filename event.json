@@ -1,0 +1,39 @@
+{
+    "events": [
+        {
+            "title": "Community Clean-Up Day",
+            "date": "2024-08-05",
+            "time": "09:00 AM - 12:00 PM",
+            "location": "Central Park",
+            "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. Supplies will be provided."
+        },
+        {
+            "title": "Farmers Market",
+            "date": "Saturdays",
+            "time": "08:00 AM - 02:00 PM",
+            "location": "Market Square",
+            "description": "Support local farmers and artisans at our weekly farmers market. Fresh produce, handmade goods, and more!"
+        },
+        {
+            "title": "Outdoor Movie Night",
+            "date": "2024-11-25",
+            "time": "07:30 PM - 10:00 PM",
+            "location": "Riverside Park",
+            "description": "Bring your blankets and chairs for a fun outdoor movie night under the stars. Movie starts at dusk."
+        },
+        {
+            "title": "Art Exhibition",
+            "date": "2024-09-10",
+            "time": "10:00 AM - 05:00 PM",
+            "location": "City Art Gallery",
+            "description": "Explore the vibrant works of local artists at this one-day art exhibition."
+        },
+        {
+            "title": "Community Clean-Up Day",
+            "date": "2024-08-05",
+            "time": "09:00 AM - 12:00 PM",
+            "location": "Central Park",
+            "description": "Join us for a community clean-up event to help keep our neighborhood beautiful. Supplies will be provided."
+        }
+    ]
+}

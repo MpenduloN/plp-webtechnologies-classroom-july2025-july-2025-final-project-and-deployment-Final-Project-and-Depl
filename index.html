@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="scripts/event.js" defer></script>
+</head>
+<body>
+    <!-- ==== HEADER ==== -->
+    <header>
+        <h1>Community Connect</h1>
+        <form class="search-form">
+            <input type="search" placeholder="Search...">
+            <div id="event-list"></div>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+<script src="scripts/event.js"></script>
+
+    <!-- ==== CALENDAR (separate from header) ==== -->
+    <section class="calendar-container">
+  <div class="calendar-container">
+  <h2>Community Calendar</h2>
+<div id="calendar"></div>
+  <!-- ...existing code... -->
+
+  <!-- Keep Google Calendar -->
+  <iframe 
+    src="https://calendar.google.com/calendar/embed?src=en.za%23holiday%40group.v.calendar.google.com&ctz=Africa%2FJohannesburg" 
+    frameborder="0" 
+    scrolling="no"
+    class="calendar-iframe">
+  </iframe>
+
+  <!-- Add JSON events below -->
+  <h3>Upcoming Events</h3>
+  <div id="event-list"></div>
+</div>
+
+</div>
+
+  </iframe>
+</section>
+
+  </div>
+</section>
+
+    </section>
+
+    <!-- ==== SIDEBAR ==== -->
+    <aside class="sidebar">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="discussion.html">Community Forum</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="photos.html">Photos</a></li>
+        </ul>
+    </aside>
+
+    <!-- ==== MAIN CONTENT ==== -->
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to Community Connect, your one-stop destination for everything Johannesburg.</p>
+            <p>On our site you will find events, news, classifieds, and more, all designed to help you stay connected and informed about your community.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Community Connect is a hub for residents, businesses, and community groups to stay informed, connect, and engage with one another.</p>
+            <p>Launched in 2025, our goal is to foster a strong, vibrant, and connected community. With regular updates on local events, news, and classifieds.</p>
+            <p>Community Connect is your go-to resource for all things Johannesburg.</p>
+        </section>
+
+        <section id="services">
+            <h2>Community Connect: Keeping you connected, informed, and safe</h2>
+            <ul>
+                <li>Event Listings</li>
+                <li>Community Forums</li>
+                <li>Volunteer Opportunities</li>
+                <li>Local Business Directory</li>
+                <li>Safety Alerts</li>
+            </ul>
+        </section>
+
+        <!-- ==== CONTACT FORM ==== -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="action">Call for Action:</label>
+                    <select id="action" name="action">
+                        <option value="Events">Events</option>
+                        <option value="News">News</option>
+                        <option value="Classifieds">Classifieds</option>
+                        <option value="Suggestions/Alerts">Suggestions/Alerts</option>
+                        <option value="Subscribe">Subscribe</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+
+        <a href="policy.html" class="terms">Terms & Conditions</a>
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer>
+        <p>&copy; 2025 Community Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
