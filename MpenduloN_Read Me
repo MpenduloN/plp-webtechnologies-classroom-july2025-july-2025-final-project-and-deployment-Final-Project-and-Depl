@@ -1,0 +1,27 @@
+# Community Connect 🌍
+
+Community Connect is a web-based platform designed to keep the Johannesburg community **connected, informed, and engaged**.  
+It provides easy access to **events, news, forums, local resources, and more** in one place.
+
+---
+
+## 📌 Features
+- 🗓️ **Community Calendar** – Displays local events (Google Calendar embed + custom JSON event list).  
+- 📰 **News & Updates** – Stay informed with community announcements.  
+- 💬 **Community Forum** – A space for discussions and collaboration.  
+- 📸 **Photos & Gallery** – Share community highlights.  
+- 📌 **Quick Links Sidebar** – Easy access to important sections.  
+- 📩 **Contact Form** – Allows users to send messages, suggestions, and event submissions.  
+- ⚡ **Search Functionality** – Search bar included in the header.  
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5** – Structure and semantic elements.  
+- **CSS3** – Styling and layout (internal and external styles).  
+- **JavaScript (Vanilla JS)** – Interactive features (event list, calendar).  
+- **Google Calendar Embed** – For real-time community events.  
+
+---
+
+
